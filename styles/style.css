@@ -16,24 +16,87 @@ http://www.workwithcolor.com/
 
 */
 
+
+
 body {
 	font-family: 'Lato', sans-serif;
 	font-size:16px;
+	
+}
+
+a:link {
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: white;
+}
+
+a:visited {
+	color:#7689A9;
+}
+
+a:hover {
+   color:#152C55;
+}
+
+a:active {
+   color:#4D658D;
+}
+
+#body-wrapper {
+    max-width: 1200px;
+    width: 90%;
+	margin: 0 auto;
+}
+
+#nav-wrapper {
+	margin: 0 auto;
+	width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
 }
 
 #navbar {
-	border: 2px red solid;
 	overflow: hidden;
+	z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FF4B4B;
+    margin-top: 1em;
 }
 
+#main-content {
+/*  padding: 16px;*/
+    margin-top: 29px;
+/*    height: 100%;*/
+	width: 100%;
+}
+
+section#my-portfolio  {
+	font-size: 1.5em;
+	text-align: center;
+	
+}
+    
+
+
+
 nav h2 {
-	color: blueviolet;
-	border: 2px blue solid;
+	color: white;
 	width:50%;
 	display: inline;
-	letter-spacing: 2px;
-	
-	
+	letter-spacing: 5px;
+	padding-left: 100px;
+	align-items: center;
+	display: inline;
+}
+
+ul {
+	margin-right: 10px;
+	display: inline;
+
 	
 }
 
@@ -42,40 +105,214 @@ li {
 	list-style-type: none;
 	display: inline;
 	float: right;
-	padding-right: 20px;
-	padding-bottom: 10px;
+	padding-left: 30px;
+	
+	align-items: center;
+	
 	
 	
 }
+
 
 
 
 #hero {
-	border: 2px red solid;
+	color:white;
 	text-align: center;
+    background-image: url("../images/hong_kong_jumbotron.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+	opacity: .8;
+	
+   
 }
 
-#portfolio-samples {
-	border: 2px red solid;
-	text-align: center;
-}
 
-#about {
-	border: 2px red solid;
-	text-align: center;
-}
 
-#contact {
-	border: 2px red solid;
-	text-align: center;
+#hero h1 {
+	font-size: 2.5em;
+	
 	
 }
 
-#footer {
-	border: 2px red solid;
+#hero p {
+	font-size: 1.8em;
+}
+
+#hero-text {
+	padding-top: 200px;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+#portfolio-samples {
+	text-align: center;
+	margin-top: 100px;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+
+
+#portfolio-pics img {
+	margin: 60px 60px 0 0;
+	border: 1px black solid;
+	
+	
+}
+
+/* beginning of experimental section */
+
+
+#my-portfolio {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+.vividworknav {
+      width: 33.333%;
+      height: auto;
+	display: inline-block;
+       float: right; 
+	position: relative;
+	left: -8%;
+      padding: 0;
+      position: relative;
+      background-color: black;
+	  margin-right: 50px;
+	  margin-top: 50px;
+	  
+    }
+
+    .vividworknav:hover img {
+      opacity: 0.3;
+    }
+
+    .vividworknav:hover .work-text-content {
+      opacity: 1; 
+    }
+
+    .vividworknav img {
+      padding: 0;
+      width: 100%;
+      display: block;
+		
+      opacity: 1;
+	  border: 2px solid black;
+	  align-content: 0 auto;
+	  
+    }
+
+    .vividworknav img,
+    .work-text-content {
+      -webkit-transition: opacity 0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out;
+    }
+
+
+
+
+
+ .work-text-content {
+      position: absolute;
+      color: white;
+      left: 0;
+      top: 25%;
+      right: 0;
+      bottom: 0;
+      font-size: 40px;
+      text-align: center;
+      opacity: 0;
+    }
+
+/* end of experimental section */
+
+
+
+#about {
+	
+	
+	font-size: 1.5em;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	clear:both;
+	
+}
+
+#main-content, #about  {
+	
 	text-align: center;
 }
 
+
+
+#contact {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 100px;
+} 
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: .7em;
+    
+}
+
+input[type=email]{
+    width: 50%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: .7em;
+    
+}
+
+textarea {
+    font-size: .7em;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    font-size: .7em;
+    border:0 none;
+    
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#footer {
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 100px;
+	color:white;
+	background:#353432;
+	height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    
 
 
 

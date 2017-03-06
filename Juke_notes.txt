@@ -1,0 +1,40 @@
+
+
+Until Monday:
+
+Style website
+think about animations or js functionality
+
+Start mobile optimization without bootstrap using media queries.
+
+
+
+1. add spacer above page equal to height of nav
+
+2. use waypoints.js to create waypoints that will highlight and unhighlight nav options based on current page being viewed
+
+
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________
+
+THE FOLLOWING HAVE BEEN DONE:
+
+DONE  style contact form. add ~10px margin-top to footer  
+make the nav position: fixed
+
+DONE 5. Style form
+
+DONE  4. tinypng.com      to compress images…use on large background images.
+
+DONE  3. Extra Credit: on mouseover darken projects and have text with sample name of project appear.
+
+DONE  3. put an internal wrapper on the navbar
