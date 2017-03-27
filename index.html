@@ -6,20 +6,17 @@
 	<title>Donny's Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
+
+
+
+
+
+
+	<!-- script files for slider-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/noframework.waypoints.min.js"></script>
-	<script src="js/app.js"></script>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93061461-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/rslides.js"></script>
 </head>
 
 <body>
@@ -30,9 +27,9 @@
 				<ul id="nav-links">
 
 
-					<li><a href="#contact-anchor">Contact Him</a></li>
-					<li><a href="#about-anchor">About</a></li>
-					<li><a href="#portfolio-anchor">Donny's Portfolio</a></li>
+					<li><a id="nav-contact" href="#contact">Contact Him</a></li>
+					<li><a id="nav-about" href="#about">About</a></li>
+					<li><a id="nav-portfolio" href="#my-portfolio">Donny's Portfolio</a></li>
 
 				</ul>
 			</nav>
@@ -45,44 +42,13 @@
 				</div>
 			</section>
 
-			<!--
-			<section id="portfolio-samples">
-				<a name="portfolio-anchor"></a>
-				<h2>Is this your Web DreamScape?:</h2>
-				<div id="portfolio-pics">
-					<div class="vividworknav">
-						<a href="#">
-							<img src="images/08-masry-al-youm-arabic-website-layout.jpg" alt="Arabic website">
-						</a>
-						<div class="work-text-content">
-							<p>Arabic عربية</p>
-						</div>
-					</div>
-					<a href="#">
-						<img src="images/Chinese_website.jpg" alt="Chinese website">
-					</a>
-					<a href="#">
-						<img src="images/Dutch_website.jpg" alt="Arabic website" alt="Dutch Website">
-					</a>
-					<br>
-					<a href="#">
-						<img src="images/French_website.jpg" alt="French Website">
-					</a>
-					<a href="#">
-						<img src="images/German_website.jpg" alt="Arabic website" alt="German Website">
-					</a>
-					<a href="#">
-						<img src="images/Turkish_website.jpg" alt="Turkish Website">
-					</a>
 
-				</div>
-			</section> 
-			
-			<!-- beginning of experimental section -->
+
+
+			<section id="portfolio-section"></section>
+			<h2>Is this your Web DreamScape?</h2>
 			<section id="my-portfolio">
-				<a name="portfolio-anchor"></a>
-				<h2>Is this your Web DreamScape?</h2>
-				<div id="arabia">
+				<div id="arabia" class="portfolio-jpg">
 					<div class="vividworknav">
 						<img src="images/08-masry-al-youm-arabic-website-layout.jpg" />
 						<div class="work-text-content">
@@ -90,7 +56,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="turkce">
+				<div id="turkce" class="portfolio-jpg">
 					<div class="vividworknav">
 						<img src="images/Turkish_website.jpg" />
 						<div class="work-text-content">
@@ -98,7 +64,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="francais">
+				<div id="francais" class="portfolio-jpg">
 					<div class="vividworknav">
 						<img src="images/French_website.jpg" />
 						<div class="work-text-content">
@@ -106,7 +72,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="Nederlands">
+				<div id="Nederlands" class="portfolio-jpg">
 					<div class="vividworknav">
 						<img src="images/Dutch_website.jpg" />
 						<div class="work-text-content">
@@ -114,7 +80,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="German">
+				<div id="German" class="portfolio-jpg">
 					<div class="vividworknav">
 						<img src="images/German_website.jpg" />
 						<div class="work-text-content">
@@ -122,7 +88,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="Italian">
+				<div id="Italian" class="portfolio-jpg">
 					<div class="vividworknav">
 						<img src="images/Chinese_website.jpg" />
 						<div class="work-text-content">
@@ -133,18 +99,25 @@
 			</section>
 
 
-
-
-
-
-
 			<!--end of experimental section -->
-
+			
 			<section id="about">
-				<a name="about-anchor"></a>
 				<h2>Who Is Donny?</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt, maxime optio. Voluptatum autem pariatur sapiente perferendis officia eaque quos recusandae corrupti tempore consequuntur. Consequuntur optio laudantium sed suscipit commodi!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit tempore alias, natus eius quasi illum quas, dolore quo voluptatibus. Eligendi blanditiis quidem minima, suscipit at officia repudiandae et explicabo vero.</p>
+
+				<h2>Here Are Some of His Passions in Life:</h2>
+
+				<div id="hobbies">
+					<ul class="rslides">
+						<li><img src="images/hobby_food_web.jpg" alt="picture of lots of food"></li>
+						<li><img src="images/hobby_languages_web.jpg" alt="Man speaking many languages"></li>
+						<li><img src="images/hobby_travel_web.jpg" alt="Traveling around the world"></li>
+						<li><img src="images/hobby_viola_web.jpg" alt="playing the viola"></li>
+					</ul>
+
+				</div>
+
 
 			</section>
 			<section id="contact">
@@ -154,7 +127,7 @@
 					<form>
 
 						<br>
-						<input type="text" name="name" placeholder="What should I call you?">
+						<input type="text" name="name" placeholder="What name should I call you?">
 						<br>
 						<input type="email" name="email" placeholder="What's your best email address?">
 						<br>
@@ -172,6 +145,8 @@
 			</footer>
 		</div>
 	</div>
+
+
 </body>
 
 </html>

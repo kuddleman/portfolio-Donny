@@ -74,6 +74,10 @@ a:active {
 	width: 100%;
 }
 
+#portfolio-section  {
+	font-size: 1.5em;
+}
+
 section#my-portfolio  {
 	font-size: 1.5em;
 	text-align: center;
@@ -159,39 +163,37 @@ li {
 	letter-spacing: 2px;
 }
 
-
+.portfolio-pic {
+	
+}
 
 #portfolio-pics img {
-	margin: 60px 60px 0 0;
-	border: 1px black solid;
 	
+	border: 2px black solid;
 	
+}
+
+
+
+#my-portfolio {
+	margin-left: 280px;
+}
+
+.portfolio-jpg {
+	margin-top: 50px;
 }
 
 /* beginning of experimental section */
 
 
-#my-portfolio {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-
 .vividworknav {
       width: 33.333%;
       height: auto;
-	display: inline-block;
-       float: right; 
-	position: relative;
-	left: -8%;
+      float: left;
       padding: 0;
       position: relative;
       background-color: black;
-	  margin-right: 50px;
-	  margin-top: 50px;
-	  
+	  margin-right: 20px;
     }
 
     .vividworknav:hover img {
@@ -206,10 +208,8 @@ li {
       padding: 0;
       width: 100%;
       display: block;
-		
       opacity: 1;
 	  border: 2px solid black;
-	  align-content: 0 auto;
 	  
     }
 
@@ -235,10 +235,51 @@ li {
       font-size: 40px;
       text-align: center;
       opacity: 0;
+	  
     }
+
 
 /* end of experimental section */
 
+
+
+/* Beginning of CSS for Slide Show */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 40%;
+  left: 25%;
+  top: 0;
+	
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+/* End of CSS for Slide Show */
 
 
 #about {
@@ -248,7 +289,7 @@ li {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	
+    
 	clear:both;
 	
 }
@@ -263,7 +304,7 @@ li {
 #contact {
 	text-align: center;
 	font-size: 1.5em;
-	margin-top: 100px;
+	margin-top: 500px;
 } 
 
 input[type=text] {
